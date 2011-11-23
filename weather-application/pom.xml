@@ -1,0 +1,67 @@
+
+<project>
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.exoplatform.demo</groupId>
+        <artifactId>google.weather.parent</artifactId>
+        <version>1.0</version>
+    </parent>
+    
+    <groupId>org.exoplatform.demo</groupId>
+    <artifactId>weather.application</artifactId>
+    <packaging>war</packaging>
+    <version>1.0</version>
+    <url>http://www.grallandco.com</url>
+    <description>Sample Web Application thats call Google Weather API</description>
+	
+    <repositories>
+        <repository>
+            <id>spy</id>
+            <name>Spy Repository</name>
+            <layout>default</layout>
+            <url>http://files.couchbase.com/maven2/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.exoplatform.demo</groupId>
+            <artifactId>weather.api</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.4</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+        <finalName>exo-application-weather</finalName>
+    </build>
+    <name>Google Weather Web Application</name>
+</project>
+

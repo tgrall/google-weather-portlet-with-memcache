@@ -1,0 +1,54 @@
+
+<project>
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.exoplatform.demo</groupId>
+        <artifactId>google.weather.parent</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <groupId>org.exoplatform.demo</groupId>
+    <artifactId>weather.api</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0</version>
+    <url>http://www.grallandco.com</url>
+    <description>Simple Google Weather API Library with integration of Memcached</description>
+	
+    <repositories>
+        <repository>
+            <id>spy</id>
+            <name>Spy Repository</name>
+            <layout>default</layout>
+            <url>http://files.couchbase.com/maven2/</url>
+        </repository>
+
+    </repositories>
+
+    <dependencies>
+	   <!-- Memcached client -->
+        <dependency>
+            <groupId>spy</groupId>
+            <artifactId>spymemcached</artifactId>
+            <version>2.7.3</version>
+        </dependency>
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+        <finalName>exo-sample-weather-api</finalName>
+    </build>
+    <name>Google Weather Simple API</name>
+</project>
+

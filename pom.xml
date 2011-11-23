@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.exoplatform.demo</groupId>
+  <artifactId>google.weather.parent</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+  <name>eXo Platform Sample: Google Weather Application</name>
+
+
+  <properties>
+    <jdk.min.version>1.6</jdk.min.version>
+    <preparationGoals>clean install</preparationGoals>
+  </properties>
+
+  <modules>
+    <module>weather-service</module>
+    <module>weather-portlet</module>
+    <module>weather-application</module>
+  </modules>
+  
+</project>
